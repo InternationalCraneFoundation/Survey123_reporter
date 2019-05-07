@@ -23,6 +23,9 @@ import glob
 
 # sendmail is an internal script
 from sendmail import send_mail
+# Get the secret passwords etc from the file
+# Make sure you don't load secrets to your public GitHub - Bad things can happen, trust me.
+from secrets import *
 
 
 def convertTime(utcTimeStamp):  # convert stored times to readable times/dates
